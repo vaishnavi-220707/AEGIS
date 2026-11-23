@@ -1,492 +1,819 @@
-╔═══════════════════════════════════════════════════════════════╗
-║           CLASSIFIED // THREAT INTELLIGENCE PLATFORM          ║
-║                    CLEARANCE LEVEL: MAXIMUM                   ║
-╚═══════════════════════════════════════════════════════════════╝
-   
-⚡ AEGIS
-Advanced Engine for Guided Intelligence & Surveillance
+# ╔══════════════════════════════════════════════════════════════╗
+# 🛡️ AEGIS — CLASSIFIED THREAT INTELLIGENCE PLATFORM
+### ADVANCED ENGINE FOR GUIDED INTELLIGENCE & SURVEILLANCE
+# ╚══════════════════════════════════════════════════════════════╝
 
-"500,000 log lines. One analyst. Zero chance." AEGIS changes that. In 12 seconds.
+<p align="center">
+  <img src="https://img.shields.io/badge/AEGIS-v2.1-red?style=for-the-badge&logo=shield" />
+  <img src="https://img.shields.io/badge/STATUS-FULLY%20OPERATIONAL-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/AI-GEMINI-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/ML-ISOLATION%20FOREST-orange?style=for-the-badge" />
+</p>
 
+<p align="center">
+  <strong>DETECT · DECODE · DEFEND</strong>
+</p>
 
-Live Demo Demo Video GitHub
+<p align="center">
+  <em>"500,000 log lines. One analyst. Zero chance."</em><br/>
+  AEGIS transforms complex network logs into actionable threat intelligence in seconds.
+</p>
 
+<p align="center">
+  <a href="https://aegis-tau-two.vercel.app/">🌐 LIVE DEMO</a> •
+  <a href="https://github.com/selfabhijeetkumar/AEGIS">💻 GITHUB REPOSITORY</a>
+</p>
 
-DETECT  ·  DECODE  ·  DEFEND
-⚠️ INTELLIGENCE BRIEF
-PARAMETER	CLASSIFICATION
-Members	Vaishnavi Isrannavar · Abhijeet Kumar
-Institution	Dayananda Sagar University, Bengaluru
-Status	🟢 FULLY OPERATIONAL
-📌 TABLE OF CONTENTS
-01 · THE THREAT LANDSCAPE          06 · TECHNICAL ARCHITECTURE
-02 · WHAT IS AEGIS                 07 · AI & ML PIPELINE  
-03 · LIVE DEMONSTRATION            08 · DEPLOYMENT INFRASTRUCTURE
-04 · CORE CAPABILITIES             09 · BUSINESS MODEL
-05 · SYSTEM SCREENSHOTS            10 · TEAM LOGIC LEGION
-01 · THE THREAT LANDSCAPE
-┌─────────────────────────────────────────────────────────────┐
-│                    THREAT INTELLIGENCE                       │
-│                                                             │
-│   3.4 BILLION    ·    287 DAYS    ·    $4.45 MILLION        │
-│   attacks/day       avg breach        avg breach cost       │
-│                      discovery                              │
-│                                                             │
-│   AEGIS DETECTION TIME: ████████████████████ 12 SECONDS    │
-└─────────────────────────────────────────────────────────────┘
-Defence networks generate millions of log entries every single day. Hidden inside those entries are brute-force attacks, data exfiltration attempts, reconnaissance probes, and lateral movement campaigns. The traditional approach — manual analysis by a single analyst — takes 8+ hours per file. By the time a threat is identified, the damage is done.
+---
 
-67% of threats are missed during manual review. The average cost of a breach: $4.45 million.
+## ⚠️ INTELLIGENCE BRIEF
 
-Existing enterprise solutions — Splunk ($150K/year), IBM QRadar ($200K/year), CrowdStrike ($100K/year) — price out 90% of the world's defence organizations. Small nations, NGOs, and developing country defence forces are left exposed.
+| Classification | Details |
+|---|---|
+| Project | AEGIS |
+| Full Form | Advanced Engine for Guided Intelligence & Surveillance |
+| Domain | AI / ML · Cybersecurity · Threat Intelligence |
+| Members | Vaishnavi Isrannavar · Abhijeet Kumar |
+| Institution | Dayananda Sagar University, Bengaluru |
+| Status | 🟢 Fully Operational |
+| Dataset | CICIDS 2017 |
+| Detection Engine | Isolation Forest |
+| AI Engine | Google Gemini API |
 
-AEGIS was built to fix this.
+## 📌 TABLE OF CONTENTS
 
-02 · WHAT IS AEGIS
-AEGIS — Advanced Engine for Guided Intelligence & Surveillance — is a full-stack, AI-powered military-grade threat intelligence platform that transforms raw network logs into classified incident reports in 12 seconds.
+1. The Threat Landscape
+2. What is AEGIS?
+3. Live Demonstration
+4. Core Capabilities
+5. System Screenshots
+6. Technical Architecture
+7. AI & ML Pipeline
+8. Deployment Infrastructure
+9. Business Model
+10. Challenge Alignment
+11. Team Logic Legion
+12. Technical Q&A
 
-Upload a log file. Watch the AI work. Receive a command-ready intelligence brief.
+---
 
-┌──────────────────────────────────────────────────────────────────┐
-│                        AEGIS PIPELINE                            │
-│                                                                  │
-│  [LOG FILE] ──► [ISOLATION FOREST ML] ──► [MITRE ATT&CK MAP]   │
-│       │                                          │               │
-│       ▼                                          ▼               │
-│  [FEATURE EXTRACT] ──► [GEMINI AI] ──► [COMMANDER'S BRIEF]     │
-│                                                  │               │
-│                                                  ▼               │
-│                               [CLASSIFIED PDF INCIDENT REPORT]  │
-└──────────────────────────────────────────────────────────────────┘
-What makes AEGIS different?
-Feature	AEGIS	Splunk	Manual Analysis
-Analysis Time	12 seconds	~2 hours	6-8 hours
-AI Explanations	✅ Plain English	❌ Raw alerts	❌ Expert required
-MITRE ATT&CK	✅ Auto-mapped	⚠️ Manual rules	❌ Expert required
-PDF Reports	✅ Military-grade	⚠️ Basic export	❌ Manual writing
-Cost	Free tier	$150K+/year	Full-time analyst
-Setup Time	Zero	Months	N/A
-03 · LIVE DEMONSTRATION
-🎬 WATCH CLASSIFIED FOOTAGE
-🌐 ENTER AEGIS — LIVE PLATFORM
-Quick Start — Demo Mode
-# No installation required. Open the live platform:
-https://aegis-tau-two.vercel.app
+# 01 · THE THREAT LANDSCAPE
 
-# Click "TRY CICIDS 2017 SAMPLE DATASET" for instant demo
-# Or upload any .csv / .log / .txt network log file
-Demo Credentials
-ACCESS LEVEL  : UNRESTRICTED (Public Demo)
-DATASET       : CICIDS 2017 — Canadian Institute for Cybersecurity
-THREAT SCORE  : 87/100 CRITICAL
-TOTAL THREATS : 15 detected
-SCAN TIME     : 12 seconds
-04 · CORE CAPABILITIES
-┌─────────────────────────────────────────────────────────┐
-│              FULL SPECTRUM INTELLIGENCE                  │
-└─────────────────────────────────────────────────────────┘
-🧠 AI Anomaly Detection
-Isolation Forest ML algorithm identifies hidden threats in millions of log entries. Unsupervised learning means it detects zero-day attacks — threats it has never seen before. No labeled training data required. Contamination factor: 5% — flags the top 5% most anomalous network flows.
+### THE PROBLEM
 
-🎯 MITRE ATT&CK Mapping
-Every detected threat is automatically classified against the global MITRE ATT&CK framework — the industry standard used by NATO, NSA, and defence organizations worldwide. Technique codes, tactic descriptions, and full classification displayed per threat.
+Modern defence networks generate millions of network log entries every day.
 
-T1110 · Brute Force              T1041 · Data Exfiltration
-T1046 · Port Scanning            T1078 · Privilege Escalation  
-T1071 · Protocol Anomaly         T1021 · Lateral Movement
-T1498 · Network DoS              T1059 · Command Execution
-⚡ Gemini AI Intelligence Briefs
-Google Gemini API generates plain-English military-tone explanations for every detected threat — making complex ML output understandable to non-technical commanders. Each brief includes: threat context, attack methodology, source intelligence, and recommended defensive actions.
+Hidden inside these logs are:
 
-🌍 IP Geolocation Tracking
-Every attacker IP is traced to its origin country using real-time geolocation. Interactive world map with pulsing attack markers — CRITICAL in red, MEDIUM in amber, LOW in green. Expandable full-screen canvas map with zoom, pan, and country labels.
+- Brute-force attacks
+- Data exfiltration attempts
+- Reconnaissance probes
+- Lateral movement campaigns
+- Suspicious network activities
 
-📊 Visual Command Dashboard
-Real-time threat visualization: 3D radar scanner showing threat score, severity distribution, attack timeline with MITRE badges, IP geolocation world map, and attack type distribution chart. Every metric animated and cinematic.
+Traditional security analysis depends heavily on manual investigation. Analysing thousands of entries takes time, requires expertise and increases the possibility of missing critical threats.
 
-📄 Classified PDF Incident Reports
-Military-grade branded PDF reports generated on demand. Includes: CONFIDENTIAL stamp, Commander's Brief, Executive Summary, Full Threat Inventory, MITRE ATT&CK mapping, AI Intelligence Analysis, IP Geolocation data, and Recommended Actions.
+Existing enterprise cybersecurity platforms can also be expensive and difficult to deploy for smaller organizations.
 
-05 · SYSTEM SCREENSHOTS
-🛡️ Landing Page — Classified Intelligence Platform
-CLASSIFIED // THREAT INTELLIGENCE PLATFORM
-"AEGIS — Intelligence, Redefined."
-Upload a log file. Let AI decode every threat.
-Receive a military-grade incident report in seconds, not hours.
-Features: 3D holographic shield (Three.js), particle field atmosphere, typewriter hero animation, animated terminal with live threat feed, cinematic scroll sections
+### THE AEGIS APPROACH
 
-📡 Upload Console — Log Ingestion
-CONSOLE / INGESTION
-DROP INTELLIGENCE HERE
-256-bit Encrypted  ·  No Data Stored  ·  Processed Locally
-Features: Drag-and-drop upload zone, animated dashed border, CICIDS 2017 demo button, 5-phase cinematic loading sequence
+AEGIS aims to simplify threat detection by combining Machine Learning, Artificial Intelligence and automated threat classification.
 
-🎯 Loading Sequence — 5-Phase Analysis
-Phase 1: ESTABLISHING SECURE CHANNEL...
-Phase 2: PARSING LOG STRUCTURE...  
-Phase 3: RUNNING ISOLATION FOREST...
-Phase 4: MAPPING MITRE ATT&CK FRAMEWORK...
-Phase 5: THREATS DETECTED. ████████████ 100%
-🖥️ Command Dashboard — Intelligence Center
-Commander's Brief
+| Traditional Analysis | AEGIS |
+|---|---|
+| Manual log inspection | Automated analysis |
+| Time-consuming investigation | Analysis in seconds |
+| Complex technical alerts | Plain-English AI explanations |
+| Manual threat classification | MITRE ATT&CK mapping |
+| Manual report preparation | Automated PDF reports |
 
-COMMANDER'S BRIEF — OPERATION AEGIS-[SCAN_ID]          [CLASSIFIED]
-▸ Multiple coordinated brute-force SSH campaigns detected from Eastern 
-  European and Asian threat actors targeting ports 22 and 3389.
-▸ Active data exfiltration confirmed — 4.7GB transferred to known C2 
-  infrastructure via encrypted reverse shell on port 4444.
-▸ DDoS flood pattern identified. Recommend activating AEGIS automated 
-  defence protocols and escalating to SOC Level 3.
-Threat Radar — Active Scan
+**Our mission:** Make advanced threat intelligence more accessible, understandable and actionable.
 
-          THREAT SCORE
-             87/100
-            CRITICAL
-         15 THREATS FOUND
-         
-[Real-time rotating radar with red/amber/green threat dots]
-Severity Distribution
+---
 
-● CRITICAL  ████████████████████  47%  (7 threats)
-● MEDIUM    █████████████         33%  (5 threats)  
-● LOW       ████                  20%  (3 threats)
-IP Geolocation — Attacker Origins
+# 02 · WHAT IS AEGIS?
 
-🔴 Russia      · 91.219.236.222  · Reverse Shell C2
-🔴 Germany     · 185.220.101.42  · Data Exfiltration
-🔴 China       · 218.92.0.107    · HTTP Flood DDoS
-🟡 Netherlands · 194.165.16.11   · Port Scanning
-🟢 Internal    · 10.0.0.5        · DNS Anomaly
-Attack Timeline
+**AEGIS (Advanced Engine for Guided Intelligence & Surveillance)** is a full-stack AI-powered cybersecurity platform that analyses network logs, identifies suspicious activities and generates actionable threat intelligence reports.
 
-02:33:22  [T1059.004 · Command and Scripting] ████ CRITICAL
-          Reverse Shell — C2 Callback from 91.219.236.222 (Russia)
+Instead of manually analysing thousands of log entries, users can upload a network log file and receive an automated security analysis.
 
-02:34:05  [T1041 · Exfiltration Over C2 Channel] █████ CRITICAL  
-          Data Exfiltration from 185.220.101.42 (Germany)
+### HOW DOES IT WORK?
 
-02:36:12  [T1498.001 · Network Denial of Service] ████ CRITICAL
-          HTTP Flood DDoS from 218.92.0.107 (China)
-🔍 Threat Detail Side Panel
-T1059.004 · Command and Scripting Interpreter: Unix Shell
-CRITICAL  ·  SCORE: 98/100
+```text
+        ┌──────────────────────┐
+        │   UPLOAD LOG FILE    │
+        └──────────┬───────────┘
+                   │
+                   ▼
+        ┌──────────────────────┐
+        │  FEATURE EXTRACTION  │
+        └──────────┬───────────┘
+                   │
+                   ▼
+        ┌──────────────────────┐
+        │  ISOLATION FOREST ML │
+        └──────────┬───────────┘
+                   │
+                   ▼
+        ┌──────────────────────┐
+        │   MITRE ATT&CK MAP   │
+        └──────────┬───────────┘
+                   │
+                   ▼
+        ┌──────────────────────┐
+        │     GEMINI AI        │
+        └──────────┬───────────┘
+                   │
+                   ▼
+        ┌──────────────────────┐
+        │ COMMANDER'S BRIEF    │
+        └──────────┬───────────┘
+                   │
+                   ▼
+        ┌──────────────────────┐
+        │ CLASSIFIED PDF REPORT│
+        └──────────────────────┘
+```
 
-MITRE ATT&CK FRAMEWORK
-Technique: Command and Scripting Interpreter: Unix Shell
-Tactic: Execution
+### WHAT MAKES AEGIS DIFFERENT?
 
-GEMINI AI ANALYSIS
-"This event represents a confirmed compromise. The internal host 
-10.0.0.5 initiated an outbound TCP connection to 91.219.236.222 
-on port 4444 — a classic reverse shell pattern. The attacker now 
-has full interactive command execution capability..."
+- Automated anomaly detection using Machine Learning.
+- Threat classification using the MITRE ATT&CK framework.
+- AI-generated explanations in simple language.
+- Attacker IP geolocation tracking.
+- Interactive cybersecurity command dashboard.
+- Downloadable incident reports with recommended defensive actions.
 
-SOURCE INTELLIGENCE
-Source IP: 91.219.236.222    Country: Russia
-Timestamp: 2026-04-10        ISP: OVH SAS
+---
 
-RECOMMENDED ACTIONS
-🔴 IMMEDIATE: Isolate host 10.0.0.5 from network
-🟡 SHORT-TERM: Block egress traffic to 91.219.236.222
-🔵 LONG-TERM: Scan all hosts for C2 beaconing patterns
+# 03 · LIVE DEMONSTRATION
 
-[ENGAGE DEFENCES] ← copies iptables mitigation script
-📋 Incident Report — CONFIDENTIAL
-         AEGIS INCIDENT REPORT
-    ╔═══════════════════════════╗
-    ║  CONFIDENTIAL — EYES ONLY ║
-    ╚═══════════════════════════╝
-    
-SCAN ID        : demo-cicids-2017
-DATE           : 12/04/2026, 14:06:43
-CLASSIFICATION : CRITICAL
-TOTAL THREATS  : 15
-CRITICAL ALERTS: 5
-THREAT SCORE   : 87/100
-06 · TECHNICAL ARCHITECTURE
-┌─────────────────────────────────────────────────────────────────┐
-│                    AEGIS SYSTEM ARCHITECTURE                    │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│   FRONTEND (Vercel)              BACKEND (Render)              │
-│   ┌─────────────────┐            ┌──────────────────┐          │
-│   │  React 18       │   HTTPS    │  FastAPI         │          │
-│   │  Vite + TS      │◄──────────►│  Python 3        │          │
-│   │  Tailwind CSS   │            │  Pandas          │          │
-│   │  Framer Motion  │            │  Scikit-learn    │          │
-│   │  Three.js       │            │  IsolationForest │          │
-│   │  Recharts       │            │  Gemini API      │          │
-│   │  tsParticles    │            │  ReportLab       │          │
-│   │  React-Leaflet  │            │  ip-api.com      │          │
-│   └─────────────────┘            └──────────────────┘          │
-│                                                                 │
-│   DATASET: CICIDS 2017 (Canadian Institute for Cybersecurity)  │
-│   AI: Google Gemini API                                         │
-│   ML: Sklearn Isolation Forest (contamination=0.05)            │
-└─────────────────────────────────────────────────────────────────┘
-Frontend Stack
-Technology	Version	Purpose
-React	18.3.1	UI Framework
-Vite	Latest	Build Tool
-TypeScript	5.x	Type Safety
-Tailwind CSS	3.x	Styling
-Framer Motion	Latest	Animations
-Three.js	0.150.0	3D Holographic Shield
-React Three Fiber	8.13.0	Three.js React Wrapper
-Recharts	Latest	Dashboard Charts
-tsParticles	Latest	Particle Atmosphere
-Lucide React	Latest	Icon System
-React Dropzone	Latest	File Upload
-Backend Stack
-Technology	Version	Purpose
-FastAPI	0.135.0	REST API Framework
-Python	3.x	Runtime
-Pandas	3.0.2	Data Processing
-Scikit-learn	1.7.1	ML — Isolation Forest
-Google Generative AI	0.8.x	Gemini AI Integration
-ReportLab	4.4.0	PDF Generation
-Uvicorn	0.44.0	ASGI Server
-Python-multipart	0.0.26	File Upload Handling
-API Endpoints
-POST  /api/upload          Upload and analyze log file
-POST  /api/demo            Load CICIDS 2017 demo dataset  
-GET   /api/scan/{id}       Retrieve scan results
-GET   /api/scan/{id}/report Generate PDF incident report
-GET   /api/history         Retrieve scan history
-07 · AI & ML PIPELINE
-┌─────────────────────────────────────────────────────────────────┐
-│                      ML DETECTION ENGINE                        │
-└─────────────────────────────────────────────────────────────────┘
-Step 1 — Feature Extraction
-# Extract 8 key network flow features per connection:
+<p align="center">
+  <a href="https://aegis-tau-two.vercel.app/">
+    <img src="https://img.shields.io/badge/ENTER%20AEGIS-LIVE%20PLATFORM-red?style=for-the-badge" />
+  </a>
+</p>
+
+### QUICK START — DEMO MODE
+
+1. Open the live AEGIS platform.
+2. Click **TRY CICIDS 2017 SAMPLE DATASET**.
+3. Wait for the automated analysis.
+4. Explore the threat dashboard.
+5. View AI-generated threat explanations.
+6. Generate and download the incident report.
+
+**Live Platform:** https://aegis-tau-two.vercel.app/
+
+**Demo Dataset:** CICIDS 2017 — Canadian Institute for Cybersecurity.
+
+### SAMPLE DEMONSTRATION RESULTS
+
+| Parameter | Sample Result |
+|---|---|
+| Threat Score | 87/100 |
+| Classification | CRITICAL |
+| Total Threats | 15 |
+| Sample Analysis Time | 12 seconds |
+
+*These are sample demonstration results, not guaranteed results for every uploaded dataset.*
+
+---
+
+# 04 · CORE CAPABILITIES
+
+### 🧠 1. AI-POWERED ANOMALY DETECTION
+
+AEGIS uses the Isolation Forest Machine Learning algorithm to identify unusual network behaviour.
+
+- Unsupervised anomaly detection.
+- Identifies suspicious network patterns.
+- Does not require labelled attack samples.
+- Flags unusual network flows for further investigation.
+
+### 🎯 2. MITRE ATT&CK MAPPING
+
+Detected suspicious activities are mapped against the MITRE ATT&CK framework.
+
+| Technique | Attack Category |
+|---|---|
+| T1110 | Brute Force |
+| T1041 | Data Exfiltration |
+| T1046 | Port Scanning |
+| T1078 | Privilege Escalation |
+| T1071 | Protocol Anomaly |
+| T1021 | Lateral Movement |
+| T1498 | Network DoS |
+| T1059 | Command Execution |
+
+### ⚡ 3. GEMINI AI INTELLIGENCE BRIEFS
+
+Google Gemini API converts complex threat information into understandable explanations.
+
+Each intelligence brief includes:
+
+- Threat context
+- Attack methodology
+- Source intelligence
+- MITRE ATT&CK classification
+- Recommended defensive actions
+
+### 🌍 4. IP GEOLOCATION TRACKING
+
+AEGIS identifies the geographical origin associated with suspicious IP addresses.
+
+- Country-level IP geolocation.
+- Interactive world map.
+- Colour-coded threat markers.
+- Zoom and pan functionality.
+- Expandable full-screen map.
+
+### 📊 5. VISUAL COMMAND DASHBOARD
+
+A centralized dashboard provides a complete overview of network threats.
+
+- 3D threat radar.
+- Threat severity distribution.
+- Attack timeline.
+- IP geolocation map.
+- Attack category charts.
+- Detailed threat information.
+
+### 📄 6. CLASSIFIED PDF INCIDENT REPORTS
+
+Generate downloadable incident reports containing:
+
+- Confidential classification.
+- Commander's Brief.
+- Executive Summary.
+- Complete Threat Inventory.
+- MITRE ATT&CK mapping.
+- AI Intelligence Analysis.
+- IP Geolocation Information.
+- Recommended Defensive Actions.
+
+---
+
+# 05 · SYSTEM SCREENSHOTS
+
+### 🛡️ LANDING PAGE — CLASSIFIED INTELLIGENCE PLATFORM
+
+AEGIS introduces a cinematic cybersecurity interface with a 3D holographic shield, particle effects and animated threat information.
+
+**Highlights:**
+- Three.js 3D holographic shield.
+- Animated particle atmosphere.
+- Typewriter hero animation.
+- Live terminal-style threat feed.
+- Cinematic scrolling sections.
+
+<!-- Add your landing page screenshot here -->
+
+### 📡 UPLOAD CONSOLE — LOG INGESTION
+
+A dedicated console allows users to upload network log files through a drag-and-drop interface.
+
+**Highlights:**
+- Drag-and-drop upload.
+- CICIDS 2017 sample dataset.
+- File ingestion interface.
+- Animated loading sequence.
+
+<!-- Add your upload console screenshot here -->
+
+### 🎯 FIVE-PHASE ANALYSIS SEQUENCE
+
+```text
+PHASE 01  ESTABLISHING SECURE CHANNEL...
+PHASE 02  PARSING LOG STRUCTURE...
+PHASE 03  RUNNING ISOLATION FOREST...
+PHASE 04  MAPPING MITRE ATT&CK FRAMEWORK...
+PHASE 05  THREATS DETECTED. 100%
+```
+
+### 🖥️ COMMAND DASHBOARD — INTELLIGENCE CENTER
+
+The dashboard displays the complete threat analysis with severity indicators, attacker locations and AI-generated intelligence.
+
+<!-- Add your dashboard screenshot here -->
+
+### 🔍 THREAT DETAIL PANEL
+
+Displays detailed information about each detected anomaly.
+
+- Threat score.
+- MITRE ATT&CK technique.
+- Gemini AI analysis.
+- Source IP and country.
+- Recommended defensive actions.
+
+<!-- Add your threat detail screenshot here -->
+
+### 📋 CLASSIFIED INCIDENT REPORT
+
+Generates a downloadable PDF report containing the complete investigation.
+
+<!-- Add your PDF report screenshot here -->
+
+---
+
+# 06 · TECHNICAL ARCHITECTURE
+
+### SYSTEM ARCHITECTURE
+
+```text
+              USER
+               │
+               ▼
+     ┌──────────────────────┐
+     │   FRONTEND           │
+     │   React + Vite       │
+     │   TypeScript         │
+     │   Tailwind CSS       │
+     │   Three.js           │
+     └──────────┬───────────┘
+                │
+              HTTPS
+                │
+                ▼
+     ┌──────────────────────┐
+     │   BACKEND            │
+     │   FastAPI            │
+     │   Python             │
+     │   Pandas             │
+     │   Scikit-learn       │
+     └──────────┬───────────┘
+                │
+       ┌────────┴────────┐
+       ▼                 ▼
+ ┌─────────────┐   ┌─────────────┐
+ │ ISOLATION   │   │ GEMINI AI   │
+ │ FOREST ML   │   │ API         │
+ └──────┬──────┘   └──────┬──────┘
+        │                 │
+        └────────┬────────┘
+                 ▼
+       ┌──────────────────┐
+       │ THREAT ANALYSIS  │
+       │ MITRE MAPPING    │
+       └────────┬─────────┘
+                ▼
+       ┌──────────────────┐
+       │ DASHBOARD + PDF  │
+       │ INCIDENT REPORT  │
+       └──────────────────┘
+```
+
+### FRONTEND TECHNOLOGIES
+
+| Technology | Purpose |
+|---|---|
+| React 18 | UI Framework |
+| Vite | Build Tool |
+| TypeScript | Type Safety |
+| Tailwind CSS | Styling |
+| Framer Motion | Animations |
+| Three.js | 3D Visualizations |
+| React Three Fiber | Three.js Integration |
+| Recharts | Dashboard Charts |
+| tsParticles | Particle Effects |
+| Lucide React | Icons |
+| React Dropzone | File Upload |
+
+### BACKEND TECHNOLOGIES
+
+| Technology | Purpose |
+|---|---|
+| Python 3 | Backend Runtime |
+| FastAPI | REST API Framework |
+| Pandas | Data Processing |
+| Scikit-learn | Machine Learning |
+| Isolation Forest | Anomaly Detection |
+| Google Gemini API | AI Intelligence |
+| ReportLab | PDF Generation |
+| Uvicorn | ASGI Server |
+| Python-multipart | File Upload Handling |
+
+### EXTERNAL SERVICES
+
+| Service | Purpose |
+|---|---|
+| Google Gemini API | AI Analysis |
+| ip-api.com | IP Geolocation |
+| CICIDS 2017 | Sample Dataset |
+| Vercel | Frontend Hosting |
+| Render | Backend Hosting |
+
+---
+
+# 07 · AI & ML PIPELINE
+
+### STEP 01 — FEATURE EXTRACTION
+
+AEGIS extracts important network flow features for analysis.
+
+```python
 features = [
-    'packets_per_second',      # Connection rate analysis
-    'bytes_transferred',       # Data volume monitoring  
-    'failed_connection_count', # Authentication failure tracking
-    'port_distribution',       # Port scanning detection
-    'protocol_type',           # Protocol anomaly detection
-    'off_hours_flag',          # Temporal pattern analysis
-    'source_ip_reputation',    # Threat intelligence lookup
-    'connection_duration'      # Session length analysis
+    'packets_per_second',
+    'bytes_transferred',
+    'failed_connection_count',
+    'port_distribution',
+    'protocol_type',
+    'off_hours_flag',
+    'source_ip_reputation',
+    'connection_duration'
 ]
-Step 2 — Isolation Forest Anomaly Detection
+```
+
+### STEP 02 — ISOLATION FOREST
+
+Isolation Forest identifies unusual patterns in network traffic.
+
+```python
 from sklearn.ensemble import IsolationForest
 
 model = IsolationForest(
-    contamination=0.05,    # Flag top 5% most anomalous
-    random_state=42,       # Reproducible results
-    n_estimators=100       # Forest size for accuracy
+    contamination=0.05,
+    random_state=42,
+    n_estimators=100
 )
 
 predictions = model.fit_predict(numeric_features)
-anomaly_scores = model.decision_function(numeric_features)
-# anomalies: predictions == -1
-Step 3 — Severity Classification
-# Severity based on anomaly score:
-if score < -0.15:  → CRITICAL  (immediate threat)
-if score < -0.05:  → MEDIUM    (elevated risk)
-else:              → LOW       (monitor)
-Step 4 — MITRE ATT&CK Rule Engine
+
+anomaly_scores = model.decision_function(
+    numeric_features
+)
+```
+
+Anomalies are identified using the prediction value `-1`.
+
+### STEP 03 — SEVERITY CLASSIFICATION
+
+AEGIS classifies anomalies according to their anomaly scores.
+
+```python
+if score < -0.15:
+    severity = "CRITICAL"
+
+elif score < -0.05:
+    severity = "MEDIUM"
+
+else:
+    severity = "LOW"
+```
+
+### STEP 04 — MITRE ATT&CK RULE ENGINE
+
+Detected patterns are associated with relevant attack techniques.
+
+```python
 MITRE_RULES = {
-    'many_failed_logins': 'T1110',   # Brute Force
-    'large_data_transfer': 'T1041',  # Data Exfiltration
-    'many_ports_probed': 'T1046',    # Port Scanning
-    'unusual_protocol': 'T1071',     # Protocol Anomaly
-    'privilege_patterns': 'T1078',   # Privilege Escalation
-    'lateral_patterns': 'T1021',     # Lateral Movement
-    'c2_connection': 'T1059',        # Command Execution
-    'dos_pattern': 'T1498'           # Network DoS
+    'many_failed_logins': 'T1110',
+    'large_data_transfer': 'T1041',
+    'many_ports_probed': 'T1046',
+    'unusual_protocol': 'T1071',
+    'privilege_patterns': 'T1078',
+    'lateral_patterns': 'T1021',
+    'c2_connection': 'T1059',
+    'dos_pattern': 'T1498'
 }
-Step 5 — Gemini AI Intelligence Brief
+```
+
+### STEP 05 — GEMINI AI INTELLIGENCE
+
+Google Gemini API generates understandable threat explanations.
+
+```python
 prompt = f"""
-You are a military cybersecurity analyst. Analyze this threat:
+You are a cybersecurity analyst.
+
+Analyze this threat:
+
 Type: {threat_type}
 Source IP: {source_ip}
 Country: {country}
 MITRE: {mitre_code}
 Score: {anomaly_score}
 
-Generate a 4-6 sentence plain English military-tone explanation
+Generate a plain-English explanation
 with recommended defensive actions.
 """
+
 response = gemini_model.generate_content(prompt)
-Model Performance
-Dataset        : CICIDS 2017 (Canadian Institute for Cybersecurity)
-Algorithm      : Isolation Forest (Unsupervised)
-Detection Rate : 94-96% on benchmark testing
-False Positive : < 3%
-Processing Time: 8-12 seconds per 5,000 log entries
-Zero-Day Ready : ✅ (Unsupervised — detects unknown attacks)
-08 · DEPLOYMENT INFRASTRUCTURE
-Frontend — Vercel
-Platform    : Vercel (Global CDN)
-Framework   : Vite
-Build CMD   : npm run build
-Output Dir  : dist
-Auto-Deploy : Every GitHub push triggers redeployment
-Live URL    : https://aegis-tau-two.vercel.app
-Backend — Render
-Platform    : Render (Free Tier)
-Runtime     : Python 3
-Build CMD   : pip install -r requirements.txt  
-Start CMD   : uvicorn main:app --host 0.0.0.0 --port $PORT
-Live URL    : https://aegis-backend-748p.onrender.com
-Note        : Free tier sleeps after inactivity (50s wake time)
-Local Development Setup
-# Clone the repository
+```
+
+### MODEL PERFORMANCE
+
+| Parameter | Project Details |
+|---|---|
+| Dataset | CICIDS 2017 |
+| Algorithm | Isolation Forest |
+| Learning Type | Unsupervised |
+| Contamination | 0.05 |
+| Detection Benchmark | 94–96% |
+| False Positive Benchmark | Below 3% |
+| Processing Time | 8–12 seconds per 5,000 entries |
+
+*Performance figures are the benchmark figures stated in the project documentation; actual performance depends on dataset, preprocessing and evaluation methodology.*
+
+---
+
+# 08 · DEPLOYMENT INFRASTRUCTURE
+
+### FRONTEND — VERCEL
+
+| Configuration | Details |
+|---|---|
+| Platform | Vercel |
+| Framework | Vite |
+| Build Command | `npm run build` |
+| Output Directory | `dist` |
+| Deployment | GitHub Integration |
+| Live URL | https://aegis-tau-two.vercel.app/ |
+
+### BACKEND — RENDER
+
+| Configuration | Details |
+|---|---|
+| Platform | Render |
+| Runtime | Python 3 |
+| Build Command | `pip install -r requirements.txt` |
+| Start Command | `uvicorn main:app --host 0.0.0.0 --port $PORT` |
+| Live URL | https://aegis-backend-748p.onrender.com/ |
+
+*The free hosting tier may experience a startup delay after inactivity.*
+
+### API ENDPOINTS
+
+| Method | Endpoint | Function |
+|---|---|---|
+| POST | `/api/upload` | Upload and analyse log files |
+| POST | `/api/demo` | Load CICIDS 2017 demo dataset |
+| GET | `/api/scan/{id}` | Retrieve scan results |
+| GET | `/api/scan/{id}/report` | Generate PDF report |
+| GET | `/api/history` | Retrieve scan history |
+
+### LOCAL DEVELOPMENT SETUP
+
+**1. Clone the repository**
+
+```bash
 git clone https://github.com/selfabhijeetkumar/AEGIS.git
+
 cd AEGIS
+```
 
-# Frontend setup
+**2. Install frontend dependencies**
+
+```bash
 cd frontend
+
 npm install
+
 npm run dev
-# Opens at http://localhost:5173
+```
 
-# Backend setup (new terminal)
+Frontend runs at:
+
+```text
+http://localhost:5173/
+```
+
+**3. Install backend dependencies**
+
+Open a new terminal:
+
+```bash
 cd backend
+
 pip install -r requirements.txt
+```
 
-# Create .env file
-echo "GEMINI_API_KEY=your_gemini_api_key_here" > .env
+**4. Configure environment variables**
 
-# Start backend
-uvicorn main:app --reload --port 8000
-# API available at http://localhost:8000
-Environment Variables
-# Backend (.env)
+Create a `.env` file inside the backend folder.
+
+```env
 GEMINI_API_KEY=your_google_gemini_api_key
+```
 
-# Frontend (auto-configured)
-VITE_API_URL=https://aegis-backend-748p.onrender.com
-Project Structure
+**5. Start the backend**
+
+```bash
+uvicorn main:app --reload --port 8000
+```
+
+Backend runs at:
+
+```text
+http://localhost:8000/
+```
+
+### ENVIRONMENT VARIABLES
+
+| Variable | Description |
+|---|---|
+| `GEMINI_API_KEY` | Google Gemini API key |
+| `VITE_API_URL` | Backend API URL |
+
+Never commit API keys or `.env` files to GitHub.
+
+### PROJECT STRUCTURE
+
+```text
 AEGIS/
+│
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── RadarThreatScanner.tsx   # 3D radar visualization
-│   │   │   ├── ExpandedMapModal.tsx     # Full-screen world map
-│   │   │   └── HolographicShield.tsx    # Three.js 3D shield
+│   │   │   ├── RadarThreatScanner.tsx
+│   │   │   ├── ExpandedMapModal.tsx
+│   │   │   └── HolographicShield.tsx
+│   │   │
 │   │   ├── pages/
-│   │   │   ├── Landing.tsx              # Hero + landing page
-│   │   │   ├── Upload.tsx               # File ingestion console
-│   │   │   ├── Dashboard.tsx            # Command center
-│   │   │   └── Report.tsx               # Incident report
+│   │   │   ├── Landing.tsx
+│   │   │   ├── Upload.tsx
+│   │   │   ├── Dashboard.tsx
+│   │   │   └── Report.tsx
+│   │   │
 │   │   └── services/
-│   │       └── api.ts                   # Backend API calls
-│   ├── vercel.json                      # Vercel deployment config
+│   │       └── api.ts
+│   │
+│   ├── vercel.json
 │   └── package.json
+│
 ├── backend/
-│   ├── main.py                          # FastAPI + ML pipeline
+│   ├── main.py
 │   └── requirements.txt
+│
 └── README.md
-09 · BUSINESS MODEL
-┌─────────────────────────────────────────────────────────────────┐
-│              AEGIS DEFEND — TIERED ACCESS MODEL                 │
-│         "Democratizing Military-Grade Threat Intelligence"      │
-└─────────────────────────────────────────────────────────────────┘
-The Problem with Existing Solutions
-Platform	Annual Cost	Setup Time	Expertise Required
-Splunk	$150,000+	3-6 months	Dedicated team
-IBM QRadar	$200,000+	6+ months	Certified engineers
-CrowdStrike	$100,000+	2-3 months	Security experts
-AEGIS Free	$0	Zero	None
-Tier Structure
-FREE — "Field Analyst"
-├── 5 scans per month
-├── Up to 1,000 log entries per scan
-├── Basic threat classification
-├── MITRE ATT&CK mapping
-└── Target: Students, researchers, small NGOs, developing nations
+```
 
-COMMAND — $29/month  
-├── Unlimited scans
-├── Up to 100,000 entries per scan
-├── Full Gemini AI explanations
-├── PDF incident reports
-├── Scan history archive
-└── Target: Small security firms, startups
+---
 
-CLASSIFIED — $299/month
-├── Everything in Command
-├── API access for integration
-├── Custom branding on reports
-├── Priority processing
-├── Dedicated support
-└── Target: Mid-size defence contractors
+# 09 · BUSINESS MODEL
 
-ENTERPRISE — Custom Pricing
-├── On-premise deployment
-├── Air-gapped network support
-├── Custom ML model training on client data
-├── SLA guarantee (99.9% uptime)
-├── Government compliance: FedRAMP, ISO 27001
-└── Target: Military organizations, government agencies
-Revenue Projections
-Year 1 Conservative Estimate:
+### AEGIS DEFEND — TIERED ACCESS MODEL
 
-10,000 free users
-  → 3% Command conversion = 300 × $29    = $8,700/month
-  → 50 Classified upgrades = 50 × $299   = $14,950/month  
-  → 2 Enterprise contracts               = $50,000+/month
-                                          ──────────────
-                              TOTAL ARR  = ~$876,000
-The Mission Statement
-"Every existing cybersecurity platform prices out small nations and developing country defence forces. AEGIS starts free — because every network deserves protection regardless of budget. We monetize at the top, subsidize at the bottom."
+**Mission: Democratizing Threat Intelligence**
 
-Abhijeet Kumar	Vaishnavi Isrannavar
-Role	Team Lead · Full Stack + ML	Co-Developer
-Institution	Dayananda Sagar University	Dayananda Sagar University
-Specialization	AI/ML · React · FastAPI	Development
-GitHub	@selfabhijeetkumar	—
-CHALLENGE ALIGNMENT
-Challenge - real world problems
+| Platform | Annual Cost (as stated in project brief) |
+|---|---:|
+| Splunk | $150,000+ |
+| IBM QRadar | $200,000+ |
+| CrowdStrike | $100,000+ |
+| AEGIS | Free Tier |
+
+### PROPOSED SUBSCRIPTION PLANS
+
+**🟢 FREE — FIELD ANALYST**
+
+- 5 scans per month.
+- Up to 1,000 log entries per scan.
+- Basic threat classification.
+- MITRE ATT&CK mapping.
+
+Target: Students, researchers and small NGOs.
+
+**🔵 COMMAND — $29/MONTH**
+
+- Unlimited scans.
+- Up to 100,000 entries per scan.
+- Gemini AI explanations.
+- PDF incident reports.
+- Scan history archive.
+
+Target: Small security firms and startups.
+
+**🟠 CLASSIFIED — $299/MONTH**
+
+- Everything in Command.
+- API access.
+- Custom report branding.
+- Priority processing.
+- Dedicated support.
+
+Target: Mid-sized defence contractors.
+
+**🔴 ENTERPRISE — CUSTOM PRICING**
+
+- On-premise deployment.
+- Air-gapped network support.
+- Custom ML model training.
+- 99.9% uptime SLA.
+- Government compliance support.
+
+Target: Military organizations and government agencies.
+
+*These are proposed product and pricing tiers, not confirmation of currently available paid subscriptions.*
+
+### THE MISSION
+
+> Every network deserves protection regardless of its budget. AEGIS aims to make advanced cybersecurity intelligence more accessible by combining automated detection, AI-powered analysis and actionable reporting.
+
+---
+
+# 10 · CHALLENGE ALIGNMENT
+
+### CHALLENGE 02 — REAL-WORLD PROBLEM SOLVING
+
+**Challenge Statement:**
 
 "Create a solution that detects interference in RF signals, classifies its severity, and notifies users with actionable insights."
 
-AEGIS directly addresses Challenge 02:
+### HOW AEGIS ADDRESSES THE CHALLENGE
 
-Challenge Requirement	AEGIS Implementation
-Detect interference	Isolation Forest ML detects hostile interference patterns in defence network communications
-Classify severity	Three-tier classification: CRITICAL / MEDIUM / LOW with confidence scores
-Notify with actionable insights	Gemini AI generates plain-English military briefs + ENGAGE DEFENCES mitigation scripts
-Signal Integrity	Network flow integrity analysis across all protocol layers
-Alert Engine	Real-time dashboard + PDF incident reports + Commander's Brief
-One line for judges:
+| Challenge Requirement | AEGIS Implementation |
+|---|---|
+| Detect interference | Isolation Forest identifies suspicious network patterns |
+| Classify severity | CRITICAL / MEDIUM / LOW classification |
+| Notify with actionable insights | Gemini AI-generated explanations |
+| Signal integrity | Network flow integrity analysis |
+| Alert engine | Interactive dashboard and PDF incident reports |
 
-"AEGIS detects hostile interference and anomalies in defence network traffic, classifies severity against MITRE ATT&CK, and delivers instant actionable intelligence — satisfying every requirement of Challenge 02."
+### ONE-LINE PITCH FOR JUDGES
 
-TECHNICAL Q&A
-Q: Why Isolation Forest over supervised models?
+> "AEGIS detects suspicious interference and anomalies in network traffic, classifies their severity using Machine Learning and MITRE ATT&CK mapping, and delivers actionable intelligence through Gemini AI-powered reports."
 
-Isolation Forest is unsupervised — it requires no labeled training data and detects zero-day attacks (threats never seen before). In defence environments, labeled attack samples are rarely available. Isolation Forest learns what "normal" looks like and flags deviations.
+---
 
-Q: What is your model accuracy?
+# 11 · TEAM LOGIC LEGION
 
-Isolation Forest on CICIDS 2017 achieves 94-96% detection rate with less than 3% false positives in published academic research. Our rule-based MITRE classification layer further reduces false positives by requiring ML + rule agreement before flagging CRITICAL.
+### THE PEOPLE BEHIND AEGIS
 
-Q: How do you handle encrypted traffic?
+| Team Member | Role | Specialization |
+|---|---|---|
+| Abhijeet Kumar | Team Lead | Full Stack Development + ML |
+| Vaishnavi Isrannavar | Co-Developer | AI/ML · React · FastAPI |
 
-AEGIS analyzes metadata — flow patterns, timing, volume, port behavior — not packet contents. This is identical to how real SIEM tools operate. Metadata analysis is sufficient and legally compliant for threat detection.
+**Institution:** DAYANANDA SAGAR UNIVERSITY, Bengaluru, India.
 
-Q: Can it detect zero-day attacks?
+### GITHUB
 
-Yes. Because Isolation Forest is unsupervised, it detects statistical anomalies regardless of whether the attack pattern has been seen before. Signature-based systems can only catch known attacks. AEGIS catches the unknown.
+**Abhijeet Kumar:** [@selfabhijeetkumar](https://github.com/selfabhijeetkumar)
 
-Q: What about production deployment?
+**Vaishnavi Isrannavar:** Add your GitHub profile link here.
 
-This is a hackathon prototype. Production deployment would use AWS ECS with auto-scaling, RDS PostgreSQL for persistence, Redis for caching, and JWT authentication. The current architecture is designed for horizontal scaling.
+---
 
-╔═══════════════════════════════════════════════════════════════╗
-║                                                               ║
-║          YOU HAVE BEEN CLEARED FOR ACCESS                     ║
-║                                                               ║
-║              aegis-tau-two.vercel.app                         ║
-║                                                               ║
-║         DETECT  ·  DECODE  ·  DEFEND                         ║
-║                                                               ║
-║    AEGIS v2.1 · logic legion  · DSU                           ║
-║                                                               ║
-╚═══════════════════════════════════════════════════════════════╝
-     
-Dayananda Sagar University, Bengaluru, India
+# 12 · TECHNICAL Q&A
+
+### Q1. Why Isolation Forest instead of supervised Machine Learning?
+
+Isolation Forest is an unsupervised algorithm. It does not require labelled training data and identifies unusual patterns by learning how normal data behaves.
+
+### Q2. How does AEGIS classify threats?
+
+AEGIS uses anomaly scores and a rule-based MITRE ATT&CK mapping layer to categorize suspicious activities into CRITICAL, MEDIUM and LOW severity levels.
+
+### Q3. How does AEGIS handle encrypted traffic?
+
+The platform focuses on network flow metadata such as connection patterns, timing, traffic volume and port behaviour rather than directly analysing encrypted packet contents.
+
+### Q4. Can AEGIS identify previously unseen attacks?
+
+Unsupervised anomaly detection can flag unusual patterns even when they do not match previously labelled attack examples. However, an anomaly does not automatically confirm a zero-day attack.
+
+### Q5. What is the role of Gemini AI?
+
+Gemini AI converts technical threat information into readable intelligence briefs and provides recommended defensive actions.
+
+### Q6. How can AEGIS be improved for production deployment?
+
+Future improvements could include:
+
+- AWS ECS for scalable deployment.
+- PostgreSQL for persistent storage.
+- Redis for caching.
+- JWT-based authentication.
+- Advanced threat intelligence integrations.
+- Continuous monitoring and alerting.
+
+---
+
+# ╔══════════════════════════════════════════════════════════════╗
+# 🛡️ YOU HAVE BEEN CLEARED FOR ACCESS
+# ╚══════════════════════════════════════════════════════════════╝
+
+<p align="center">
+  <strong>AEGIS v2.1 · LOGIC LEGION · DSU</strong>
+</p>
+
+<p align="center">
+  <a href="https://aegis-tau-two.vercel.app/">
+    <img src="https://img.shields.io/badge/ACCESS%20AEGIS-DETECT%20%7C%20DECODE%20%7C%20DEFEND-red?style=for-the-badge" />
+  </a>
+</p>
+
+<p align="center">
+  <em>Making threat intelligence faster, smarter and more accessible.</em>
+  <br/><br/>
+  DAYANANDA SAGAR UNIVERSITY<br/>
+  Bengaluru, Karnataka, India
+</p>
+
+---
+
+<p align="center">
+  ⭐ If you find this project interesting, consider giving the repository a star!
+</p>
